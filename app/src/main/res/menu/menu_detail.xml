@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gyasistory.project1moviedatabase.DetailActivity"
+    >
+    <item
+        android:id="@+id/sort_pop_id"
+        android:orderInCategory="100"
+        android:title="@string/sort_pop"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/sort_vote_id"
+        android:orderInCategory="100"
+        android:title="@string/sort_top"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/show_my_favourits"
+        android:orderInCategory="100"
+        android:title="show my favourits"
+        app:showAsAction="never" />
+</menu>

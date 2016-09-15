@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252626"
+    tools:context="com.example.moham.movieapp_volley.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detail_release_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start"
+                    android:text="2016"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/detail_popularity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start"
+                    android:textColor="@color/colorwhite"
+                    android:text="popularity  70.3"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/detail_vote_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/detail_vote_average"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+                <Button
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="add to\n favourits"
+                    android:textColor="#f1355b"
+                    android:background="#252626"
+                    android:id="@+id/add_fav_button_id"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/colorTextHeads"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/detail_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:text="Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world."
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/trailers"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trailers"
+                android:textColor="@color/colorTextHeads"
+                android:textSize="30sp" />
+
+            <ListView
+                android:id="@+id/trailers_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/trailers"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:textColor="@color/colorTextHeads"
+                android:textSize="30sp" />
+
+            <ListView
+                android:id="@+id/reviews_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

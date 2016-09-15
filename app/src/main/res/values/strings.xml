@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieApp_volley</string>
+    <string name="sort_pop">sort by popular</string>
+    <string name="sort_top">sort by top voted</string>
+    <string name="trailers">Trailers</string>
+    <array name="Trailers_texts">
+        <item>Click here to show trailer one</item>
+        <item>Click here to show trailer two</item>
+    </array>
+
+</resources>
